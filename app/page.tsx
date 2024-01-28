@@ -1,13 +1,36 @@
-import Image from "next/image";
+import { FaGithub, FaTwitter} from "react-icons/fa";
 import Button from "./components/button";
 import Container from "./components/container";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center gap-5 p-5 bg-violet-400">
-      <div className="bg-violet-500	 w-5/6 p-12 rounded-2xl">
-        本项目免费
-      </div>
+      <Container
+        title="项目介绍"
+      >
+        <div className="flex flex-col gap-2 text-white">       
+          <div>
+            把 WARP 的节点转换成订阅地址，让你可以在各种客户端上使用 WARP 节点。
+          </div>
+
+          <div className="flex gap-2">
+            <a className="flex gap-1" href="https://github.com/vvbbnn00/WARP-Clash-API">
+              <FaGithub className="m-auto"/>
+              <div className="m-auto">
+                GitHub
+              </div>
+            </a>
+
+            <a className="flex gap-1" href="https://twitter.com/correctroad">
+              <FaTwitter className="m-auto"/>
+              <div className="m-auto">
+                Twitter
+              </div>
+            </a>
+          </div>          
+        </div>
+
+      </Container>
 
       <Container
         title="Clash"
@@ -29,7 +52,7 @@ export default function Home() {
             backgroundColor="white"
 
             type="import"
-            url="clash://install-config?url=https://warp.zeabur.app/api/clash?best=false&randomName=true"
+            url="clash://install-config?url=https%3A%2F%2Fwarp.zeabur.app%2Fapi%2Fclash%3Fbest%3Dfalse%26randomName%3Dtrue"
           />
         </>
       </Container>
@@ -49,13 +72,13 @@ export default function Home() {
 
           />
           <Button 
-            text="自动导入 Surge"
+            text="自动导入 Surge(iOS only)"
             icon="copy"
             textColor="blue"
             backgroundColor="white"
 
             type="import"
-            url="surge:///install-config?url=https://warp.zeabur.app/api/clash?best=false&randomName=true"
+            url="surge:///install-config?url=https%3A%2F%2Fwarp.zeabur.app%2Fapi%2Fclash%3Fbest%3Dfalse%26randomName%3Dtrue"
 
           />
         </>
@@ -72,7 +95,7 @@ export default function Home() {
             backgroundColor="white"
 
             type="import"
-            url="clash://install-config?url=https://warp.zeabur.app/api/clash?best=false&randomName=true"
+            url="clash://install-config?url=https%3A%2F%2Fwarp.zeabur.app%2Fapi%2Fclash%3Fbest%3Dfalse%26randomName%3Dtrue"
 
           />
           <Button 
@@ -82,7 +105,7 @@ export default function Home() {
             backgroundColor="white"
 
             type="import"
-            url="quantumult-x:///update-configuration?remote-resource=https://warp.zeabur.app/api/clash?best=false&randomName=true"
+            url="quantumult-x:///update-configuration?remote-resource=https%3A%2F%2Fwarp.zeabur.app%2Fapi%2Fclash%3Fbest%3Dfalse%26randomName%3Dtrue"
 
           />
         </>
