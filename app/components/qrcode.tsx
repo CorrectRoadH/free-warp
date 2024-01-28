@@ -3,7 +3,7 @@ import * as Dialog from '@radix-ui/react-dialog';
 import { Cross2Icon } from '@radix-ui/react-icons';
 import "./qc.css"
 import QRCodeComponent from "react-qr-code";
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const QRCode = () => {
     const [value, setValue] = useState('');
