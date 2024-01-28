@@ -7,13 +7,6 @@ import { useEffect, useState } from 'react';
 
 const QRCode = () => {
     const [value, setValue] = useState('');
-    useEffect(() => {
-        fetch('https://subs.zeabur.app/wireguard')
-        .then(res => res.text())
-        .then(res => {
-            setValue(res)
-        })
-    },[])
     return (
         <Dialog.Root>
         <Dialog.Trigger asChild>
@@ -21,6 +14,14 @@ const QRCode = () => {
                 className="flex rounded-2xl p-2 hover:shadow-lg cursor-pointer hover:-translate-y-1 duration-300"
                 style={{
                     backgroundColor: "white",
+                }}
+                onClick={()=>{
+                  fetch('https://subs.zeabur.app/wireguard')
+                  .then(res => res.text())
+                  .then(res => {
+                      setValue(res)
+                  })
+          
                 }}
             >
                 <div className="m-auto"
