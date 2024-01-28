@@ -43,7 +43,7 @@ export default function Home() {
             backgroundColor="white"
 
             type="link"
-            url="https://subscription.zeabur.app/s/Clash"
+            url="https://tinyurl.com/clash-warp"
           />
           <Button 
             text="自动导入 Clash"
@@ -52,7 +52,7 @@ export default function Home() {
             backgroundColor="white"
 
             type="import"
-            url="clash://install-config?url=https%3A%2F%2Fsubscription.zeabur.app%2Fs%2FClash"
+            url="clash://install-config?url=https%3A%2F%2Ftinyurl.com%2Fclash-warp"
           />
         </>
       </Container>
@@ -78,7 +78,7 @@ export default function Home() {
             backgroundColor="white"
 
             type="import"
-            url="surge:///install-config?url=https%3A%2F%2Fsubscription.zeabur.app%2Fs%2FSurge"
+            url="surge:///install-config?url=http%3A%2F%2Ftinyurl.com%2Fsurge-warp"
 
           />
         </>
@@ -95,7 +95,7 @@ export default function Home() {
             backgroundColor="white"
 
             type="import"
-            url="clash://install-config?url=https%3A%2F%2Fsubscription.zeabur.app%2Fs%2FClash"
+            url="clash://install-config?url=https%3A%2F%2Ftinyurl.com%2Fclash-warp"
 
           />
           <Button 
@@ -105,11 +105,38 @@ export default function Home() {
             backgroundColor="white"
 
             type="import"
-            url="quantumult-x:///update-configuration?remote-resource=https%3A%2F%2Fsubscription.zeabur.app%2Fs%2FClash"
+            url="quantumult-x:///update-configuration?remote-resource=https%3A%2F%2Ftinyurl.com%2Fclash-warp"
 
           />
         </>
       </Container>
+
+      <Container
+        title="安卓"
+      >
+        <>
+          <Button 
+            text="复制 WireGuard 配置"
+            icon="copy"
+            textColor="blue"
+            backgroundColor="white"
+
+            type="link"
+            url="https://warp.zeabur.app/api/wireguard?best=false&randomName=true"
+
+          />
+          <Button 
+            text="WireGuard 二维码"
+            icon="copy"
+            textColor="blue"
+            backgroundColor="white"
+
+            type="link"
+            url="https://warp.zeabur.app/api/wireguard?best=false&randomName=true"
+          />
+        </>
+      </Container>
+
 
 
       <div>

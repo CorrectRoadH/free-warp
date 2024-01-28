@@ -28,7 +28,6 @@ const Button = ({text,icon,textColor,backgroundColor,type,url}:ButtonProps) => {
                 onClick={() => {
                     if(type === "link") {
                         copy(url)
-
                         toast.success("已复制到剪贴板")
                     } else if(type === "import") {
                         // open a new url
