@@ -43,7 +43,7 @@ export default function Home() {
             backgroundColor="white"
 
             type="link"
-            url="https://tinyurl.com/clash-warp"
+            url="https://subs.zeabur.app/clash"
           />
           <Button 
             text="自动导入 Clash"
@@ -52,7 +52,7 @@ export default function Home() {
             backgroundColor="white"
 
             type="import"
-            url="clash://install-config?url=https%3A%2F%2Ftinyurl.com%2Fclash-warp"
+            url="clash://install-config?url=https%3A%2F%2Fsubs.zeabur.app%2Fclash"
           />
         </>
       </Container>
@@ -68,7 +68,7 @@ export default function Home() {
             backgroundColor="white"
 
             type="link"
-            url="https://subscription.zeabur.app/s/Surge"
+            url="https://subs.zeabur.app/surge"
 
           />
           <Button 
@@ -78,7 +78,7 @@ export default function Home() {
             backgroundColor="white"
 
             type="import"
-            url="surge:///install-config?url=http%3A%2F%2Ftinyurl.com%2Fsurge-warp"
+            url="surge:///install-config?url=https%3A%2F%2Fsubs.zeabur.app%2Fsurge"
 
           />
         </>
@@ -95,7 +95,7 @@ export default function Home() {
             backgroundColor="white"
 
             type="import"
-            url="clash://install-config?url=https%3A%2F%2Ftinyurl.com%2Fclash-warp"
+            url="clash://install-config?url=https%3A%2F%2Fsubs.zeabur.app%2Fclash"
 
           />
           <Button 
@@ -105,7 +105,7 @@ export default function Home() {
             backgroundColor="white"
 
             type="import"
-            url="quantumult-x:///update-configuration?remote-resource=https%3A%2F%2Ftinyurl.com%2Fclash-warp"
+            url="quantumult-x:///update-configuration?remote-resource=https%3A%2F%2Fsubs.zeabur.app%2Fclash"
 
           />
         </>
