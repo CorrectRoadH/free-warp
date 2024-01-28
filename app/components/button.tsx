@@ -1,6 +1,6 @@
 "use client";
 import { toast } from 'sonner';
-import { useCopyToClipboard } from 'usehooks-ts'
+import copy from 'copy-to-clipboard';
 
 type ButtonType = "link" | "import";
 
@@ -13,7 +13,6 @@ interface ButtonProps {
     type: ButtonType
 }
 const Button = ({text,icon,textColor,backgroundColor,type,url}:ButtonProps) => {
-    const [copiedText, copy] = useCopyToClipboard()
 
     return (
         <div
@@ -28,13 +27,9 @@ const Button = ({text,icon,textColor,backgroundColor,type,url}:ButtonProps) => {
                 }}
                 onClick={() => {
                     if(type === "link") {
-                        copy(url).then((success) => {
-                            if(success) {
-                                toast.success("已复制到剪贴板")
-                            }else{
-                                toast.error(`复制失败,请手动复制 ${url}`)
-                            }
-                        })
+                        copy(url)
+
+                        toast.success("已复制到剪贴板")
                     } else if(type === "import") {
                         // open a new url
                         window.open(url)
