@@ -9,7 +9,7 @@ const Container = ({title,children}:ContainerProps) => {
         <div className="bg-violet-500 w-5/6 rounded-2xl p-2 pl-5">
             <h1 className="text-slate-300">{title}</h1>
 
-            <div className="flex gap-2 p-6">
+            <div className="flex flex-wrap gap-2 p-6">
                 {children}
             </div>
         </div>

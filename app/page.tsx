@@ -1,6 +1,7 @@
 import { FaGithub, FaTwitter} from "react-icons/fa";
 import Button from "./components/button";
 import Container from "./components/container";
+import QRCode from "./components/qrcode";
 
 export default function Home() {
   return (
@@ -122,18 +123,22 @@ export default function Home() {
             backgroundColor="white"
 
             type="link"
-            url="https://warp.zeabur.app/api/wireguard?best=false&randomName=true"
+            url="https://subs.zeabur.app/wireguard"
 
           />
-          <Button 
-            text="WireGuard 二维码"
+          
+          <QRCode />
+
+        <Button 
+            text="下载 WireGuard"
             icon="copy"
             textColor="blue"
             backgroundColor="white"
 
-            type="link"
-            url="https://warp.zeabur.app/api/wireguard?best=false&randomName=true"
+            type="import"
+            url="wireguard.apk"
           />
+
         </>
       </Container>
 
