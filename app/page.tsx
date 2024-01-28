@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "./components/button";
+import Container from "./components/container";
 
 export default function Home() {
   return (
@@ -8,10 +9,10 @@ export default function Home() {
         本项目免费
       </div>
 
-      <div className="bg-violet-500	 w-5/6 p-12 rounded-2xl">
-        <h1>Clash</h1>
-
-        <div className="flex gap-2">
+      <Container
+        title="Clash"
+      >
+        <>
           <Button 
             text="复制 Clash 订阅地址"
             icon="copy"
@@ -30,14 +31,13 @@ export default function Home() {
             type="import"
             url="clash://install-config?url=https://warp.zeabur.app/api/clash?best=false&randomName=true"
           />
-        </div>
-
-      </div>
+        </>
+      </Container>
       
-      <div className="bg-violet-500	 w-5/6 p-12 rounded-2xl">
-        <h1>Surge</h1>
-
-        <div className="flex gap-2">
+      <Container
+        title="Surge"
+      >
+        <>
           <Button 
             text="复制 Surge 订阅地址"
             icon="copy"
@@ -58,13 +58,13 @@ export default function Home() {
             url="surge:///install-config?url=https://warp.zeabur.app/api/clash?best=false&randomName=true"
 
           />
-        </div>
-      </div>
+        </>
+      </Container>
 
-      <div className="bg-violet-500	 w-5/6 p-12 rounded-2xl">
-        <h1>iOS</h1>
-
-        <div className="flex gap-2">
+      <Container
+        title="iOS"
+      >
+        <>
           <Button 
             text="自动导入 Shadowrocket"
             icon="copy"
@@ -85,8 +85,8 @@ export default function Home() {
             url="quantumult-x:///update-configuration?remote-resource=https://warp.zeabur.app/api/clash?best=false&randomName=true"
 
           />
-        </div>
-      </div>
+        </>
+      </Container>
 
 
       <div>
