@@ -43,7 +43,7 @@ export default function Home() {
             backgroundColor="white"
 
             type="link"
-            url="https://warp.zeabur.app/api/clash?best=false&randomName=true"
+            url="https://subscription.zeabur.app/s/Clash"
           />
           <Button 
             text="自动导入 Clash"
@@ -52,7 +52,7 @@ export default function Home() {
             backgroundColor="white"
 
             type="import"
-            url="clash://install-config?url=https%3A%2F%2Fwarp.zeabur.app%2Fapi%2Fclash%3Fbest%3Dfalse%26randomName%3Dtrue"
+            url="clash://install-config?url=https%3A%2F%2Fsubscription.zeabur.app%2Fs%2FClash"
           />
         </>
       </Container>
@@ -68,7 +68,7 @@ export default function Home() {
             backgroundColor="white"
 
             type="link"
-            url="https://warp.zeabur.app/api/clash?best=false&randomName=true"
+            url="https://subscription.zeabur.app/s/Surge"
 
           />
           <Button 
@@ -78,7 +78,7 @@ export default function Home() {
             backgroundColor="white"
 
             type="import"
-            url="surge:///install-config?url=https%3A%2F%2Fwarp.zeabur.app%2Fapi%2Fclash%3Fbest%3Dfalse%26randomName%3Dtrue"
+            url="surge:///install-config?url=https%3A%2F%2Fsubscription.zeabur.app%2Fs%2FSurge"
 
           />
         </>
@@ -95,7 +95,7 @@ export default function Home() {
             backgroundColor="white"
 
             type="import"
-            url="clash://install-config?url=https%3A%2F%2Fwarp.zeabur.app%2Fapi%2Fclash%3Fbest%3Dfalse%26randomName%3Dtrue"
+            url="clash://install-config?url=https%3A%2F%2Fsubscription.zeabur.app%2Fs%2FClash"
 
           />
           <Button 
@@ -105,7 +105,7 @@ export default function Home() {
             backgroundColor="white"
 
             type="import"
-            url="quantumult-x:///update-configuration?remote-resource=https%3A%2F%2Fwarp.zeabur.app%2Fapi%2Fclash%3Fbest%3Dfalse%26randomName%3Dtrue"
+            url="quantumult-x:///update-configuration?remote-resource=https%3A%2F%2Fsubscription.zeabur.app%2Fs%2FClash"
 
           />
         </>
