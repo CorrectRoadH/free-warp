@@ -28,8 +28,13 @@ const Button = ({text,icon,textColor,backgroundColor,type,url}:ButtonProps) => {
                 }}
                 onClick={() => {
                     if(type === "link") {
-                        copy(url)
-                        toast.success(url)
+                        copy(url).then((success) => {
+                            if(success) {
+                                toast.success("已复制到剪贴板")
+                            }else{
+                                toast.error(`复制失败,请手动复制 ${url}`)
+                            }
+                        })
                     } else if(type === "import") {
                         // open a new url
                         window.open(url)

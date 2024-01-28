@@ -14,14 +14,14 @@ export default function Home() {
           </div>
 
           <div className="flex gap-2">
-            <a className="flex gap-1" href="https://github.com/vvbbnn00/WARP-Clash-API">
+            <a className="flex gap-1" target="_blank" href="https://github.com/vvbbnn00/WARP-Clash-API">
               <FaGithub className="m-auto"/>
               <div className="m-auto">
                 GitHub
               </div>
             </a>
 
-            <a className="flex gap-1" href="https://twitter.com/correctroad">
+            <a className="flex gap-1" target="_blank" href="https://twitter.com/correctroad">
               <FaTwitter className="m-auto"/>
               <div className="m-auto">
                 Twitter
@@ -113,7 +113,7 @@ export default function Home() {
 
 
       <div>
-        Powered by <a href="https://github.com/vvbbnn00/WARP-Clash-API">WARP Clash API</a> and <a href="https://1.1.1.1/">WARP+</a>
+        Powered by <a target="_blank"  href="https://github.com/vvbbnn00/WARP-Clash-API">WARP Clash API</a> and <a target="_blank"  href="https://1.1.1.1/">WARP+</a>
       </div>
     </main>
   );
