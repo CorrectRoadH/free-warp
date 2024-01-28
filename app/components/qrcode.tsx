@@ -6,7 +6,7 @@ import QRCodeComponent from "react-qr-code";
 import { useState } from 'react';
 
 const QRCode = () => {
-    const [value, setValue] = useState('');
+    const [value, setValue] = useState('loading');
     return (
         <Dialog.Root>
         <Dialog.Trigger asChild>
@@ -39,7 +39,10 @@ const QRCode = () => {
                 WireGuard 配置二维码
             </Dialog.Description>
 
-            <QRCodeComponent value={value} />
+            {
+              value == 'loading' ?  <div className='text-black'> Loading </div>
+              :<QRCodeComponent value={value} />
+            }
 
             <Dialog.Close asChild>
               <button className="IconButton" aria-label="Close">

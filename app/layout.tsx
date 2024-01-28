@@ -22,7 +22,7 @@ export default function RootLayout({
         <Script
           id="google-analytics"
           dangerouslySetInnerHTML={{
-            '__html': `<!-- Google tag (gtag.js) -->
+            '__html': `
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-7JZKRTP3T1"></script>
             <script>
               window.dataLayer = window.dataLayer || [];
