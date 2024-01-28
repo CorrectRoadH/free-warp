@@ -7,8 +7,8 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Warp to Clash,Surge",
-  description: "在 Clash 和 Surge 上"
+  title: "Warp To Clash/Surge",
+  description: "在 Clash 和 Surge 上一键使用 Warp+",
 };
 
 export default function RootLayout({
