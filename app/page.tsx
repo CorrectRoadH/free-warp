@@ -11,14 +11,14 @@ export default function Home() {
       >
         <div className="flex flex-col gap-2 text-white">       
           <div>
-            把 WARP 的节点转换成订阅地址，让你可以在各种客户端上使用 WARP 节点。
+            把 WARP 的节点转换成订阅地址，让你可以在各种客户端上通过订阅使用 WARP+ 节点。
           </div>
 
           <div>
-
+            本项目 Free & Open Source，欢迎 Star 。
           </div>
 
-          <div className="flex gap-2">
+          <div className="flex gap-2 flex-wrap">
             <a className="flex gap-1" target="_blank" href="https://github.com/vvbbnn00/WARP-Clash-API">
               <FaGithub className="m-auto"/>
               <div className="m-auto">
@@ -26,10 +26,10 @@ export default function Home() {
               </div>
             </a>
 
-            <a className="flex gap-1" target="_blank" href="https://twitter.com/correctroad">
+            <a className="flex gap-1" target="_blank" href="https://twitter.com/intent/follow?screen_name=correctroad">
               <FaTwitter className="m-auto"/>
               <div className="m-auto">
-                Twitter
+                Follow Twitter
               </div>
             </a>
           </div>          

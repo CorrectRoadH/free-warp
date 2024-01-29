@@ -23,13 +23,13 @@ export default function RootLayout({
           id="google-analytics"
           dangerouslySetInnerHTML={{
             '__html': `
-            <script async src="https://www.googletagmanager.com/gtag/js?id=G-7JZKRTP3T1"></script>
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-6X034D5RZB"></script>
             <script>
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
             
-              gtag('config', 'G-7JZKRTP3T1');
+              gtag('config', 'G-6X034D5RZB');
             </script>
             `}} 
           />
