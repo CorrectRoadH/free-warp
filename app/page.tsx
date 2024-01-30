@@ -93,6 +93,10 @@ export default function Home() {
         title="iOS"
       >
         <>
+          <div>
+            因为 Quantumult X 不支持 Wireguard 协议，所以无法使用该项目。其它客户端未测试。
+          </div>
+
           <Button 
             text="自动导入 Shadowrocket"
             icon="copy"
@@ -103,16 +107,6 @@ export default function Home() {
             url="clash://install-config?url=https%3A%2F%2Fsubs.zeabur.app%2Fclash"
 
           />
-          <Button 
-            text="自动导入 QX"
-            icon="copy"
-            textColor="blue"
-            backgroundColor="white"
-
-            type="import"
-            url="quantumult-x:///update-configuration?remote-resource=https%3A%2F%2Fsubs.zeabur.app%2Fclash"
-
-          />
         </>
       </Container>
 
@@ -120,31 +114,49 @@ export default function Home() {
         title="安卓"
       >
         <>
-          <Button 
-            text="复制 WireGuard 配置"
-            icon="copy"
-            textColor="blue"
-            backgroundColor="white"
+          <div>
+            安卓机推荐使用 Clash Mate，可以自动更新订阅，功能也比较强大。本站不提供下载，请到 GitHub，自行下载。
+          </div>
 
-            type="link"
-            url="https://subs.zeabur.app/wireguard"
+          <div className="flex gap-3">
+            <Button 
+              text="复制 Clash Mate 订阅地址"
+              icon="copy"
+              textColor="blue"
+              backgroundColor="white"
 
-          />
-          
-          <QRCode />
+              type="link"
+              url="https://subs.zeabur.app/clash"
+            />
+            <Button 
+              text="自动导入 Clash Mate"
+              icon="copy"
+              textColor="blue"
+              backgroundColor="white"
 
-        <Button 
-            text="下载 WireGuard"
-            icon="copy"
-            textColor="blue"
-            backgroundColor="white"
+              type="import"
+              url="clash://install-config?url=https%3A%2F%2Fsubs.zeabur.app%2Fclash"
+            />
+            </div>
 
-            type="import"
-            url="wireguard.apk"
-          />
+            <div className="flex gap-3">
+              <Button 
+                text="复制 WireGuard 配置"
+                icon="copy"
+                textColor="blue"
+                backgroundColor="white"
 
+                type="link"
+                url="https://subs.zeabur.app/wireguard"
+
+              />
+              
+              <QRCode />
+            </div>
         </>
+
       </Container>
+
 
 
 
