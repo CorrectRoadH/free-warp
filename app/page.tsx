@@ -19,14 +19,14 @@ export default function Home() {
           </div>
 
           <div className="flex gap-2 flex-wrap">
-            <a className="flex gap-1" target="_blank" href="https://github.com/vvbbnn00/WARP-Clash-API">
+            <a className="flex gap-1" target="_blank" href="https://slash.zeabur.app/s/github">
               <FaGithub className="m-auto"/>
               <div className="m-auto">
                 GitHub
               </div>
             </a>
 
-            <a className="flex gap-1" target="_blank" href="https://twitter.com/intent/follow?screen_name=correctroad">
+            <a className="flex gap-1" target="_blank" href="https://slash.zeabur.app/s/twitter">
               <FaTwitter className="m-auto"/>
               <div className="m-auto">
                 Follow Twitter
