@@ -20,16 +20,16 @@ export default function Home() {
 
           <div className="flex gap-2 flex-wrap">
             <a className="flex gap-1" target="_blank" href="https://slash.zeabur.app/s/github">
-              <FaGithub className="m-auto"/>
-              <div className="m-auto">
+              <FaGithub className="m-auto text-white"/>
+              <div className="m-auto text-white">
                 GitHub
               </div>
             </a>
 
             <a className="flex gap-1" target="_blank" href="https://slash.zeabur.app/s/twitter">
-              <FaTwitter className="m-auto"/>
-              <div className="m-auto">
-                Follow Twitter
+              <FaTwitter className="m-auto text-white"/>
+              <div className="m-auto text-white">
+                Follow in Twitter
               </div>
             </a>
           </div>          
@@ -92,33 +92,35 @@ export default function Home() {
       <Container
         title="iOS"
       >
-        <>
-          <div>
+        <div className="flex flex-col gap-2">
+          <div className="text-white">
             因为 Quantumult X 不支持 Wireguard 协议，所以无法使用该项目。其它客户端未测试。
           </div>
 
-          <Button 
-            text="自动导入 Shadowrocket"
-            icon="copy"
-            textColor="blue"
-            backgroundColor="white"
+          <div className="flex">
+            <Button 
+              text="自动导入 Shadowrocket"
+              icon="copy"
+              textColor="blue"
+              backgroundColor="white"
 
-            type="import"
-            url="clash://install-config?url=https%3A%2F%2Fsubs.zeabur.app%2Fclash"
+              type="import"
+              url="clash://install-config?url=https%3A%2F%2Fsubs.zeabur.app%2Fclash"
 
-          />
-        </>
+            />
+          </div>
+        </div>
       </Container>
 
       <Container
         title="安卓"
       >
         <>
-          <div>
+          <div className="text-white">
             安卓机推荐使用 Clash Mate，可以自动更新订阅，功能也比较强大。本站不提供下载，请到 GitHub，自行下载。
           </div>
 
-          <div className="flex gap-3">
+          <div className="flex flex-wrap gap-3">
             <Button 
               text="复制 Clash Mate 订阅地址"
               icon="copy"
