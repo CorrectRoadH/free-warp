@@ -1,4 +1,4 @@
-import { FaGithub, FaTwitter} from "react-icons/fa";
+import { FaGithub, FaTwitter } from "react-icons/fa";
 import Button from "./components/button";
 import Container from "./components/container";
 import QRCode from "./components/qrcode";
@@ -9,7 +9,7 @@ export default function Home() {
       <Container
         title="项目介绍"
       >
-        <div className="flex flex-col gap-2 text-white">       
+        <div className="flex flex-col gap-2 text-white">
           <div>
             把 WARP 的节点转换成订阅地址，让你可以在各种客户端上通过订阅使用 WARP+ 节点。
           </div>
@@ -20,19 +20,19 @@ export default function Home() {
 
           <div className="flex gap-2 flex-wrap">
             <a className="flex gap-1" target="_blank" href="https://slash.zeabur.app/s/github">
-              <FaGithub className="m-auto text-white"/>
+              <FaGithub className="m-auto text-white" />
               <div className="m-auto text-white">
                 GitHub
               </div>
             </a>
 
             <a className="flex gap-1" target="_blank" href="https://slash.zeabur.app/s/twitter">
-              <FaTwitter className="m-auto text-white"/>
+              <FaTwitter className="m-auto text-white" />
               <div className="m-auto text-white">
                 Follow in Twitter
               </div>
             </a>
-          </div>          
+          </div>
         </div>
 
       </Container>
@@ -41,7 +41,7 @@ export default function Home() {
         title="Clash"
       >
         <>
-          <Button 
+          <Button
             text="复制 Clash 订阅地址"
             icon="copy"
             textColor="blue"
@@ -50,7 +50,7 @@ export default function Home() {
             type="link"
             url="https://subs.zeabur.app/clash"
           />
-          <Button 
+          <Button
             text="自动导入 Clash"
             icon="copy"
             textColor="blue"
@@ -61,12 +61,12 @@ export default function Home() {
           />
         </>
       </Container>
-      
+
       <Container
         title="Surge"
       >
         <>
-          <Button 
+          <Button
             text="复制 Surge 订阅地址"
             icon="copy"
             textColor="blue"
@@ -76,7 +76,7 @@ export default function Home() {
             url="https://subs.zeabur.app/surge"
 
           />
-          <Button 
+          <Button
             text="自动导入 Surge(iOS only)"
             icon="copy"
             textColor="blue"
@@ -98,7 +98,7 @@ export default function Home() {
           </div>
 
           <div className="flex">
-            <Button 
+            <Button
               text="自动导入 Shadowrocket"
               icon="copy"
               textColor="blue"
@@ -117,12 +117,12 @@ export default function Home() {
       >
         <>
           <div className="text-white">
-            安卓机推荐使用 Clash Mate，可以自动更新订阅，功能也比较强大。本站不提供下载，请到 GitHub，自行下载。
+            安卓机推荐使用 [Clash Meta for Android](https://github.com/MetaCubeX/ClashMetaForAndroid)，可以自动更新订阅，功能也比较强大。
           </div>
 
           <div className="flex flex-wrap gap-3">
-            <Button 
-              text="复制 Clash Mate 订阅地址"
+            <Button
+              text="复制 Clash 订阅地址"
               icon="copy"
               textColor="blue"
               backgroundColor="white"
@@ -130,8 +130,8 @@ export default function Home() {
               type="link"
               url="https://subs.zeabur.app/clash"
             />
-            <Button 
-              text="自动导入 Clash Mate"
+            <Button
+              text="自动导入 Clash"
               icon="copy"
               textColor="blue"
               backgroundColor="white"
@@ -139,22 +139,22 @@ export default function Home() {
               type="import"
               url="clash://install-config?url=https%3A%2F%2Fsubs.zeabur.app%2Fclash"
             />
-            </div>
+          </div>
 
-            <div className="flex gap-3">
-              <Button 
-                text="复制 WireGuard 配置"
-                icon="copy"
-                textColor="blue"
-                backgroundColor="white"
+          <div className="flex gap-3">
+            <Button
+              text="复制 WireGuard 配置"
+              icon="copy"
+              textColor="blue"
+              backgroundColor="white"
 
-                type="link"
-                url="https://subs.zeabur.app/wireguard"
+              type="link"
+              url="https://subs.zeabur.app/wireguard"
 
-              />
-              
-              <QRCode />
-            </div>
+            />
+
+            <QRCode />
+          </div>
         </>
 
       </Container>
@@ -163,7 +163,7 @@ export default function Home() {
 
 
       <div>
-        Powered by <a target="_blank"  href="https://github.com/vvbbnn00/WARP-Clash-API">WARP Clash API</a> and <a target="_blank"  href="https://1.1.1.1/">WARP+</a>
+        Powered by <a target="_blank" href="https://github.com/vvbbnn00/WARP-Clash-API">WARP Clash API</a> and <a target="_blank" href="https://1.1.1.1/">WARP+</a>
       </div>
     </main>
   );
