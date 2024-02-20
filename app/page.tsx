@@ -117,7 +117,7 @@ export default function Home() {
       >
         <>
           <div className="text-white">
-            安卓机推荐使用 [Clash Meta for Android](https://github.com/MetaCubeX/ClashMetaForAndroid)，可以自动更新订阅，功能也比较强大。
+            安卓机推荐使用 <a href="https://github.com/MetaCubeX/ClashMetaForAndroid">Clash Meta for Android</a>。
           </div>
 
           <div className="flex flex-wrap gap-3">
