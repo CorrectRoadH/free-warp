@@ -115,9 +115,9 @@ export default function Home() {
       <Container
         title="安卓"
       >
-        <>
-          <div className="text-white">
-            安卓机推荐使用 <a href="https://github.com/MetaCubeX/ClashMetaForAndroid">Clash Meta for Android</a>。
+        <div className="flex flex-col gap-3">
+          <div className=" text-white">
+            安卓推荐使用 <a className="text-white" target="_blank" href="https://github.com/MetaCubeX/ClashMetaForAndroid">Clash Meta for Android</a>
           </div>
 
           <div className="flex flex-wrap gap-3">
@@ -155,7 +155,7 @@ export default function Home() {
 
             <QRCode />
           </div>
-        </>
+        </div>
 
       </Container>
 
