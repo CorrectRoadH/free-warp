@@ -11,7 +11,7 @@ export default function Home() {
       >
         <div className="flex flex-col gap-2 text-white">
           <div>
-            把 WARP 的节点转换成订阅地址，让你可以在各种客户端上通过订阅使用 WARP+ 节点。
+            把 Cloudflare WARP+ 的节点转换成订阅地址，让你可以在各种客户端上通过订阅使用 Cloudflare WARP+ 节点。
           </div>
 
           <div>

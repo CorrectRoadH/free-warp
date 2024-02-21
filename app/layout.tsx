@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Warp To Clash/Surge",
-  description: "在 Clash 和 Surge 上一键使用 Warp+",
+  description: "在 Clash 和 Surge 上一键使用 Cloudflare Warp+ 的节点",
 };
 
 export default function RootLayout({

@@ -7,7 +7,7 @@ interface ContainerProps {
 const Container = ({title,children}:ContainerProps) => {
     return (
         <div className="bg-violet-500 w-5/6 rounded-2xl p-2 pl-5">
-            <h1 className="text-slate-300">{title}</h1>
+            <h2 className="text-slate-300">{title}</h2>
 
             <div className="flex flex-wrap gap-2 p-6">
                 {children}
