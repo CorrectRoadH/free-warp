@@ -93,7 +93,7 @@ export default function Home() {
             backgroundColor="white"
 
             type="link"
-            url="https://subs.zeabur.app/singbox"
+            url="https://subs.zeabur.app/sing-box"
           />
         </>
       </Container>
