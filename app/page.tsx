@@ -83,6 +83,22 @@ export default function Home() {
       </Container>
 
       <Container
+        title="Sing box"
+      >
+        <>
+          <Button
+            text="复制 Sing box 订阅地址"
+            icon="copy"
+            textColor="blue"
+            backgroundColor="white"
+
+            type="link"
+            url="https://subs.zeabur.app/singbox"
+          />
+        </>
+      </Container>
+
+      <Container
         title="iOS"
       >
         <div className="flex flex-col gap-2">
