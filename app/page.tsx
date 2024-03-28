@@ -25,6 +25,13 @@ export default function Home() {
                 GitHub
               </div>
             </a>
+
+            <a className="flex gap-1" target="_blank" href="https://slash.zeabur.app/s/twitter">
+              <FaTwitter className="m-auto text-white" />
+              <div className="m-auto text-white">
+                Follow in Twitter
+              </div>
+            </a>
           </div>
         </div>
 

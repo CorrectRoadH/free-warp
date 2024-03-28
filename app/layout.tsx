@@ -37,8 +37,8 @@ export default function RootLayout({
           id="umami"
           strategy="afterInteractive"
           defer
-          src="https://analytics.us.umami.is/script.js" 
-          data-website-id="4fa90300-914f-47b8-af53-14b189873114"
+          src="https://ctrdh.zeabur.app/script.js" 
+          data-website-id="67f44a6c-fefd-49ce-b422-13264f96e2ab"
         />
 
         <Script id="script"
