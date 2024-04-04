@@ -2,6 +2,7 @@ import { FaGithub, FaTwitter } from "react-icons/fa";
 import Button from "./components/button";
 import Container from "./components/container";
 import QRCode from "./components/qrcode";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -35,6 +36,28 @@ export default function Home() {
           </div>
         </div>
 
+      </Container>
+
+      <Container
+        title="广告"
+      >
+        <>
+          <a  className="flex flex-col md:flex-row text-white gap-5" href="https://tghub.me" target="_blank">
+            <div className="flex flex-col m-auto">
+              <div className="font-black	">Telegram Hub</div>
+                <div>每次都有好看的</div>
+
+                <div>https://TGHub.me</div>
+              </div>
+            <Image
+              className="rounded-xl"
+              src="/tghub.png"
+              width={200}
+              height={200}
+              alt="tghub.me"
+            ></Image>
+          </a>
+        </>
       </Container>
 
       <Container
