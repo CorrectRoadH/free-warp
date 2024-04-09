@@ -204,6 +204,11 @@ export default function Home() {
       <div>
         Powered by <a target="_blank" href="https://github.com/vvbbnn00/WARP-Clash-API">WARP Clash API</a> and <a target="_blank" href="https://1.1.1.1/">WARP+</a>
       </div>
+
+      <div>
+        <a target="_blank" href="https://correctroadh.github.io">My Blog</a>
+      </div>
+
     </main>
   );
 }
